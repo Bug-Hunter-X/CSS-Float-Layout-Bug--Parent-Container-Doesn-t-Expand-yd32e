@@ -1,0 +1,16 @@
+There are several ways to fix this issue. Here's one common solution:
+
+```css
+.container {
+  width: 100%;
+  overflow: auto; /* Or overflow: hidden; */
+}
+
+.item {
+  float: left;
+  width: 50%; /* Example width for the items */
+  box-sizing: border-box; /* Optional: To include padding and border in the element's total width */
+}
+```
+
+Adding `overflow: auto;` (or `overflow: hidden;`) to the `.container` forces the parent to recognize the floated content and stretch to accommodate it. Alternatively, using flexbox or grid would provide a cleaner and more modern solution for layout.
