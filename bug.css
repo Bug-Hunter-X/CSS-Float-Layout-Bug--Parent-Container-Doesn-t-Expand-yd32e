@@ -1,0 +1,1 @@
+The following CSS code causes an unexpected layout issue in some browsers. The `.container` div does not expand to fill its available width, even though `width: 100%` is specified. This is because the `float: left;` property on the `.item` elements prevents the parent container from stretching to encompass its floated children.
